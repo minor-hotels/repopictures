@@ -1,7 +1,7 @@
 
 # Power BI Images Repository
 
-Este repositorio está dedicado a almacenar imágenes, iconos y recursos gráficos utilizados en los informes de Power BI. Aquí puedes encontrar y mantener todos los elementos visuales necesarios para mejorar la presentación de tus informes.
+This repository contains all kind of resources (pictures, logos and icons) that can be used in the reports and data tools. 
 
 ## Structure
 
@@ -13,6 +13,7 @@ The repository is organized in different folders:
 - minor_logos: company offical logo and brand lookups
 - outlets_logos: logos of the different F&B properties (restuarants, bars, etc.)
 - quest_logos: logos for QUESTforExcellence project
+- bi_logos: BI department logos
 
 ## How to use them?
 
@@ -24,5 +25,5 @@ With this option your picture/icon will be directly linked to the repository one
 
 You must go to the resource and make right click on the picture and select "Open image in a new tab", the picture will appear in new tab on your browser, then copy the link and paste it on the insert picture as link option in Power BI visual. 
 
-Link should follow this format: `https://raw.githubusercontent.com/nhbigithub/repopictures/refs/heads/main/<path_to_resource>`
+Link should follow this format: `https://raw.githubusercontent.com/minor-hotels/repopictures/refs/heads/main/<path_to_resource>`
 You can see a tutorial Power BI on the following folder: `\\vspmdhq-bi\BI_Server_F\Data_Governance\Templates\Power-BI_Images-Template`

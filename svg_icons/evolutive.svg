@@ -1,0 +1,36 @@
+
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round">
+
+    <!-- eje -->
+    <path d="M60 450 L60 60" />
+    <path d="M60 450 L460 450" />
+
+    <!-- barras -->
+    <rect x="120" y="320" width="60" height="130">
+      <animate attributeName="height" from="0" to="130" dur="0.6s" fill="freeze"/>
+      <animate attributeName="y" from="450" to="320" dur="0.6s" fill="freeze"/>
+    </rect>
+
+    <rect x="220" y="260" width="60" height="190">
+      <animate attributeName="height" from="0" to="190" dur="0.8s" fill="freeze"/>
+      <animate attributeName="y" from="450" to="260" dur="0.8s" fill="freeze"/>
+    </rect>
+
+    <rect x="320" y="200" width="60" height="250">
+      <animate attributeName="height" from="0" to="250" dur="1s" fill="freeze"/>
+      <animate attributeName="y" from="450" to="200" dur="1s" fill="freeze"/>
+    </rect>
+
+    <!-- línea animada -->
+    <path d="M80 300 L180 220 L280 220 L420 100"
+          stroke-dasharray="500"
+          stroke-dashoffset="500">
+      <animate attributeName="stroke-dashoffset"
+               from="500" to="0"
+               dur="2.2s"
+               repeatCount="indefinite">
+    </path>
+
+  </g>
+</svg>

@@ -29,7 +29,7 @@
       <animate attributeName="stroke-dashoffset"
                from="500" to="0"
                dur="2.2s"
-               repeatCount="indefinite">
+               repeatCount="indefinite"/>
     </path>
 
   </g>

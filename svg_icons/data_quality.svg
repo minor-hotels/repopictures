@@ -9,7 +9,7 @@
   stroke-linejoin:round;
   stroke-dasharray:400;
   stroke-dashoffset:400;
-  animation:draw 1.2s ease forwards;
+  animation:draw 3s infinite;
 }
 
 .check{
@@ -20,7 +20,7 @@
   stroke-linejoin:round;
   stroke-dasharray:80;
   stroke-dashoffset:80;
-  animation:draw .6s ease forwards 1s;
+  animation:draw 3.5s infinite;
 }
 
 @keyframes draw{

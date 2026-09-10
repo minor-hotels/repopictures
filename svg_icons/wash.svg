@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440">
+
+<style>
+.icon{
+  fill:none;
+  stroke:#000;
+  stroke-width:8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-dasharray:1500;
+  stroke-dashoffset:1500;
+  animation:draw 3s infinite;
+}
+
+@keyframes draw{
+  to{
+    stroke-dashoffset:0;
+  }
+}
+</style>
+
+<!-- Personas -->
+<circle class="icon" cx="115" cy="45" r="30"/>
+<circle class="icon" cx="210" cy="45" r="30"/>
+<circle class="icon" cx="305" cy="45" r="30"/>
+
+<path class="icon" d="M85 125 A30 30 0 0 1 145 125"/>
+<path class="icon" d="M180 125 A30 30 0 0 1 240 125"/>
+<path class="icon" d="M275 125 A30 30 0 0 1 335 125"/>
+
+<!-- Barra superior -->
+<rect
+  class="icon"
+  x="50"
+  y="130"
+  width="350"
+  height="35"
+  rx="2"
+/>
+
+<!-- Embudo -->
+<path class="icon" d="M70 170 L195 300"/>
+<path class="icon" d="M380 170 L255 300"/>
+
+<!-- Moneda -->
+<circle
+  class="icon"
+  cx="225"
+  cy="380"
+  r="65"
+/>
+
+<!-- Símbolo $ -->
+<path class="icon" d="M225 335 V425"/>
+
+<path
+  class="icon"
+  d="
+    M245 350
+    C245 330 205 330 205 355
+    C205 380 245 370 245 395
+    C245 420 205 420 205 400
+  "
+/>
+
+<!-- Documento -->
+<path
+  class="icon"
+  d="
+    M440 170
+    H560
+    L610 220
+    V385
+    H440
+    Z
+  "
+/>
+
+<path
+  class="icon"
+  d="
+    M560 170
+    V220
+    H610
+  "
+/>
+
+<!-- Líneas del documento -->
+<line class="icon" x1="470" y1="240" x2="530" y2="240"/>
+<line class="icon" x1="470" y1="270" x2="550" y2="270"/>
+<line class="icon" x1="470" y1="300" x2="550" y2="300"/>
+<line class="icon" x1="470" y1="330" x2="530" y2="330"/>
+<line class="icon" x1="470" y1="360" x2="530" y2="360"/>
+
+<!-- Círculo con X -->
+<circle
+  class="icon"
+  cx="590"
+  cy="375"
+  r="40"
+/>
+
+<line
+  class="icon"
+  x1="575"
+  y1="360"
+  x2="605"
+  y2="390"
+/>
+
+<line
+  class="icon"
+  x1="605"
+  y1="360"
+  x2="575"
+  y2="390"
+/>
+
+</svg>

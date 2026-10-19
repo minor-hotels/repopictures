@@ -1,27 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="64" height="64"
-     viewBox="0 0 64 64"
-     fill="none"
-     stroke="#FFFFFF"
-     stroke-width="2.6"
-     stroke-linecap="round"
-     stroke-linejoin="round">
+     viewBox="0 0 80 80"
+     width="80" height="80"
+     fill="none">
 
-  <!-- Punto de apoyo -->
-  <path d="M30 25 L20 49 H40 Z"/>
+  <defs>
+    <style>
+      .stroke {
+        stroke: #FFFFFF;
+        stroke-width: 2.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
 
-  <!-- Palanca inclinada -->
-  <path d="M10 35 L50 15"/>
+      .solid {
+        fill: #FFFFFF;
+      }
 
-  <!-- Extremos -->
-  <circle cx="10" cy="35" r="3"/>
-  <circle cx="50" cy="15" r="3"/>
+      .lever {
+        animation: leverMove 2.8s ease-in-out infinite;
+        transform-origin: 40px 44px;
+      }
 
-  <!-- Flecha de impacto positivo -->
-  <path d="M43 9 L53 3 M46 3 H53 V10"/>
+      .impact {
+        animation: impactPulse 1.4s ease-in-out infinite;
+        transform-origin: 57px 24px;
+      }
+
+      .arrow {
+        animation: arrowRise 1.4s ease-in-out infinite;
+      }
+
+      @keyframes leverMove {
+        0%   { transform: rotate(-3deg); }
+        25%  { transform: rotate(11deg); }
+        50%  { transform: rotate(-3deg); }
+        75%  { transform: rotate(11deg); }
+        100% { transform: rotate(-3deg); }
+      }
+
+      @keyframes impactPulse {
+        0%, 100% { opacity: 0.35; transform: scale(0.8); }
+        50%      { opacity: 1; transform: scale(1.05); }
+        /* 55%      { opacity: 0.8; transform: scale(0.95); } */
+      }
+
+      @keyframes arrowRise {
+        0%, 100% { transform: translateY(0px); opacity: 0.85; }
+        50%      { transform: translateY(-3px); opacity: 1; }
+      }
+    </style>
+  </defs>
 
   <!-- Base -->
-  <path d="M16 51 H44"/>
+  <path class="stroke" d="M18 60H60"/>
+
+  <!-- Fulcro -->
+  <path class="stroke" d="M33 48L39 38L45 48Z"/>
+
+  <!-- Palanca animada -->
+  <g class="lever">
+    <path class="stroke" d="M18 42L58 26"/>
+    <circle class="stroke" cx="18" cy="42" r="4"/>
+    <circle class="stroke" cx="58" cy="26" r="4"/>
+  </g>
+
+  <!-- Impacto -->
+  <g class="impact">
+    <path class="stroke" d="M62 20L65 23"/>
+    <path class="stroke" d="M65 17L65 21"/>
+    <path class="stroke" d="M68 20L65 23"/>
+  </g>
+
+  <!-- Flecha de crecimiento
+  <g class="arrow">
+    <path class="stroke" d="M24 30L34 30L42 24L50 24"/>
+    <path class="stroke" d="M46 20L50 24L46 28"/>
+  </g> -->
 
 </svg>
-  
